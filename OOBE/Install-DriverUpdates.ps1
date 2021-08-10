@@ -1,3 +1,7 @@
+#Requires -RunAsAdministrator
+
+#How To: Update Drivers using the PSWindowsUpdate Module
+
 $UpdateDrivers = $true
 if (!(Get-Module PSWindowsUpdate -ListAvailable)) {
     try {

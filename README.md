@@ -1,27 +1,20 @@
-# OSDeploy ScriptRepo
+# OSDeployPad
 
-**PowerShell Syntax**
+If you are reading this page then you didn't add a value for the RepoFolder parameter
 
-`Start-ScriptRepo [-Owner] <string> [-Repo] <string> [[-Path] <string>] [-OAuth <string>]`
+Try one of these commands:
 
+**Out of Box Experience**
+Start-OSDeployPad OOBE
 
-At a minimum, you need the Owner and Repository specified
+**OSDCloud Setup**
+Start-OSDeployPad OSDCloudSetup
 
-`PS> Start-ScriptRepo -Owner OSDeploy -Repo ScriptRepo`
+**Edit-OSDCloud.winpe**
+Start-OSDeployPad OSDCloudWinPE
 
+**OSDCloud Deployment Samples**
+Start-OSDeployPad OSDCloudDeploy
 
-This can be simplified by leaving off the parameter names as they are positional
-
-`PS> Start-ScriptRepo OSDeploy ScriptRepo`
-
-
-If you need to open the OSDCloud subdirectory of a Repository, use the Path parameter
-
-`PS> Start-ScriptRepo OSDeploy ScriptRepo -Path OSDCloud`
-
-`PS> Start-ScriptRepo OSDeploy ScriptRepo OSDCloud`
-
-
-You can add additional depths to the Path by separating with a forward slash
-
-`PS> Start-ScriptRepo OSDeploy ScriptRepo -Path 'OSDCloud/Setup'`
+**OSDCloud Deployment Task Sequences**
+Start-OSDeployPad OSDCloudTasks
